@@ -7,6 +7,7 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Familia from './components/basicos/Familia'
+import FamiliaMembro from './components/basicos/FamiliaMembro'
 
 export default _ =>
     <div className="App">
@@ -15,7 +16,11 @@ export default _ =>
         <div className="Cards">
 
             <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
-                <Familia sobreNome="Ferreira"/>
+                <Familia sobreNome="Silva">
+                    <FamiliaMembro nome="Pedro" />
+                    <FamiliaMembro nome="Ana" />
+                    <FamiliaMembro nome="Gustavo" />
+                </Familia>
             </Card>
 
             <Card titulo="#04 - Desafio Aleatório" color="#FA6900">
