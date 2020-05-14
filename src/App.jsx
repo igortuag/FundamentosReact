@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import Card from './components/layout/Card'
@@ -18,7 +20,15 @@ export default _ =>
 
         <div className="Cards">
 
-            <Card titulo="#07 - Exercicio Repetição" color="#5BB12F">
+            <Card titulo="#08 - Par ou Impar" color="#982395">
+                <ParOuImpar numero={22} />
+                <UsuarioInfo usuario={{nome : 'Igor'}} />
+                <UsuarioInfo usuario={{email : 'Igor@tuag.com'}} />
+                <UsuarioInfo usuario={{}} />
+                <UsuarioInfo />
+            </Card>
+
+            <Card titulo="#07 - Exercicio Repetição" color="#3A9AD9">
                 <TabelaProdutos></TabelaProdutos>
             </Card>
 
