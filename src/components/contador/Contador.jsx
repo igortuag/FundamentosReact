@@ -24,7 +24,7 @@ class Contador extends Component {
     };
 
     setPasso = (novoPasso) => {
-        this.setPasso({
+        this.setState({
             passo: novoPasso,
         });
     };
