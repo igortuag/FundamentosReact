@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import DiretaPai from './components/comunicacao/DiretaPai'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
@@ -13,17 +15,24 @@ import Aleatorio from './components/basicos/Aleatorio'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 
-
 export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
 
+            <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+                <IndiretaPai />
+            </Card>
+
+            <Card titulo="#09 - Comunicação Direta" color="#59323C">
+                <DiretaPai />
+            </Card>
+
             <Card titulo="#08 - Par ou Impar" color="#982395">
                 <ParOuImpar numero={22} />
-                <UsuarioInfo usuario={{nome : 'Igor'}} />
-                <UsuarioInfo usuario={{email : 'Igor@tuag.com'}} />
+                <UsuarioInfo usuario={{ nome: 'Igor' }} />
+                <UsuarioInfo usuario={{ email: 'Igor@tuag.com' }} />
                 <UsuarioInfo usuario={{}} />
                 <UsuarioInfo />
             </Card>
