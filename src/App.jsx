@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import Loteria from "./components/loteria/Loteria"
 import Contador from "./components/contador/Contador"
 import Input from "./components/formulario/Input"
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
@@ -23,8 +24,12 @@ export default _ =>
 
         <div className="Cards">
 
-        <Card titulo="#12 - Contador" color="#424242">
-                <Contador numeroInicial={10}/>
+            <Card titulo="#13 - Desafio - Loteria" color=" #B9006E">
+                <Loteria qtde={8}/>
+            </Card>
+
+            <Card titulo="#12 - Contador" color="#424242">
+                <Contador numeroInicial={10} />
             </Card>
 
             <Card titulo="#11 - Componente Controlado (Input)" color="#E45F56">

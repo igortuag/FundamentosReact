@@ -1,6 +1,5 @@
 import './Input.css'
 import React, { useState } from "react";
-import { findByLabelText } from '@testing-library/react';
 
 export default props => {
 
